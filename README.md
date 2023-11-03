@@ -1,4 +1,4 @@
-# btlTKWEB
+# Nhóm 10 - btlTKWEB
 1. Tên đề tài: Website du lịch Tây Bắc.
 2. Mô tả ý tưởng: 
 - Gồm những trang: Trang chủ, Trang chuyên mục, Trang chi tiết,...
