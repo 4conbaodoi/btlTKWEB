@@ -1,0 +1,229 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+
+:root{
+  --orange:#ffa500;
+}
+
+*{
+  font-family: 'EB Garamond', serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}*/
+main{
+  margin-top: 10em;
+}
+section{
+  font-size: 150%;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+header{
+  font-family: 'Slabo 27px', serif;
+  position: fixed;
+  top:0; left: 0; right:0;
+  background:#333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+header .logo:hover{
+    text-decoration: none;
+    color: orange;
+}
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+header .logo span{
+  color:varorange;
+}
+
+header .navbar a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+}
+
+header .navbar a:hover{
+  color:orange;
+  text-decoration: none;
+}
+
+header .icons a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+}
+
+header .icons a:hover{
+  color:orange;
+  text-decoration: none ;
+}
+header .icons i{
+  font-size: 2.5rem;
+  color:#fff;
+  cursor: pointer;
+  margin-right: 0rem;
+}
+.footer{
+  background:#333;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  padding: 30px 150px 0px 150px ;
+}
+
+.footer .box-container .box{
+  padding:0 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--orange);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  font: 13.2px "Slabo 27px", serif !important;
+  margin: 8.8px 0px 0px !important;
+  padding: 6.16px 8.8px !important;
+  text-align: center;
+  padding:0.7rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color:GRAY;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+
+
+
+
+.DiaDiem{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.DiaDiem span{
+  text-align: center;
+  font-size: 3.5rem;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.card{
+  border-radius: 10px;
+  transition: all .3s;
+}
+.card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card_body .h3{
+  font:1.75rem Arial;
+  font-weight: 700;
+}
+.card_body  .p {
+  font:1.075rem Arial;
+  color: #5b5858;
+}
+.text_active{
+  font-weight: 600 !important;
+  color: rgb(224, 154, 41) !important;
+}
+.button{
+  background-color:rgb(224, 154, 41);
+  font-size: 2rem;
+  transition: all .3s;
+}
+.button:hover{
+  transform: translateY(-5px);
+  border: 1px solid rgb(224, 154, 41);
+  color: rgb(224, 154, 41) !important;
+  font-weight: 600;
+  background-color: rgb(235, 239, 241);
+}
+
+ul{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+ul li{
+  text-align: center;
+  list-style: none;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+ul li.pageNumber{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+ul li.pageNumber.active a,
+ul, li.pageNumber:hover a{
+  background-color: rgba(255, 165, 0,.2);
+  color: #777;
+}
+
+
+
