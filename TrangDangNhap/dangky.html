@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ĐĂNG NHẬP | TOUR DU LỊCH</title>
+    <title>ĐĂNG KÝ | TOUR DU LỊCH</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="dangky.css" />
   </head>
   <body>
     <section>
       <div class="form-box">
         <div class="form-value">
           <form action="" id="loginForm" onsubmit="validateForm(event)">
-            <h2>Đăng Nhập</h2>
-            <hr style="margin-top: 0.8em" />
+            <h2>Đăng Ký</h2>
+            <hr style="margin-top: 0.6em" />
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
               <input type="Email" id="username" name="username" required />
@@ -25,14 +25,15 @@
               <label for="">Mật khẩu</label>
               <span id="error-pass-invalid" style="color: red"></span>
             </div>
-
-            <div class="forget">
-              <label for=""><input type="checkbox" style="" />Ghi nhớ</label>
-              <a href="#quenmatkhau">Quên mật khẩu</a>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" id="confirmPassword" name="confirmPassword" required />
+              <label for="">Xác nhận mật khẩu</label>
+              <span id="error-confirmpass-invalid" style="color: red"></span>
             </div>
-            <button>Đăng nhập</button>
+            <button>Đăng ký</button>
             <div class="register">
-              <p>Bạn chưa có tài khoản?<a href="dangky.html">Đăng kí ngay</a></p>
+              <p>Bạn đã có tài khoản?<a href="login.html">Đăng nhập ngay</a></p>
             </div>
             <div class="quaylai">
               Quay lại trang chủ
@@ -50,6 +51,8 @@
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         let showError = document.getElementById("error-pass-invalid");
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        let showErrors = document.getElementById("error-confirmpass-invalid");
         // Kiểm tra tính hợp lệ của tên đăng nhập và mật khẩu
 
         // Nếu tên đăng nhập ngắn hơn 4 ký tự và mật khẩu ngắn hơn 6 ký tự thì không hợp lệ
@@ -57,11 +60,18 @@
           alert("Tên đăng nhập phải dài ít nhất 4 ký tự.");
           return false;
         }
+        if (password != confirmPassword) {
+            showErrors.innerHTML =
+                "Mật khẩu không trùng khớp!";
+            return false;
+        } else {
+            showErrors.innerHTML = "";
+        }
         var passwordRegex = /^[A-Za-z0-9]+$/; //Biểu thức này chỉ chấp nhận các ký tự chữ cái (cả chữ hoa và chữ thường) và số từ 0 đến 9.
         if (password.length < 6 || !password.match(passwordRegex)) {
           //   alert(
           //     "Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không được chứa kí tự đặc biệt."
-          //   );
+          //
           //Hiển thị thông báo lỗi
           showError.innerHTML =
             "Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không được chứa kí tự đặc biệt.";
@@ -69,9 +79,9 @@
         } else {
           showError.innerHTML = "";
         }
-        alert("Đăng nhập thành công.");
+        alert("Đăng ký thành công.");
         // Đăng nhập thành công về trang chủ
-        window.location.href = "../TrangChu/final.html";
+        window.location.href = "login.html";
         return false;
       }
     </script>
