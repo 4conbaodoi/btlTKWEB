@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Learning
-=======
 # Nhóm 10 - btlTKWEB
 1. Tên đề tài: Website du lịch Tây Bắc.
 2. Mô tả ý tưởng: 
@@ -11,4 +8,3 @@
 3. Website tương tự: 
 - https://datviettour.com.vn/tour-du-lich-tay-bac
 - https://dulichviet.
->>>>>>> origin/main
