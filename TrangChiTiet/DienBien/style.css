@@ -192,8 +192,9 @@ object-fit: cover;
 }
 
 .sidebar {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    top: 10px;
+    right: 0px;
     width: 400px;
     background-color: rgb(255, 253, 250);
     padding: 10px;
