@@ -199,6 +199,8 @@ object-fit: cover;
     margin-bottom: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
+    position: -webkit-sticky;
+    position:sticky;
     border: solid 1px #ffd9a4;
     /*z-index: 1000;*/
     transition: top 0.3s; /* Thêm transition để có hiệu ứng mượt mà khi thay đổi top */
