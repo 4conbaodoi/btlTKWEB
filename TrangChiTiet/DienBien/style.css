@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
-
+.wrapCont{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+.breadcrumb{
+    background: #f2f5f8;
+    padding-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
 .navation ul {
     list-style: none;
     padding: 0;
@@ -8,7 +22,7 @@
 }
 
 .navation li {
-    margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb */
+    margin-right: 5px; /* Khoảng cách giữa các mục breadcrumb */
     position: relative;
 }
 
@@ -16,7 +30,7 @@
     content: '>'; /* Nội dung của phần tử ::after */
     position:git  absolute;
     top: 50%;
-    right: -7px; /* Khoảng cách giữa mục và dấu ">" */
+    right: -20px; /* Khoảng cách giữa mục và dấu ">" */
     transform: translateY(-50%);
     color: #333; /* Màu của dấu ">" */
 }
@@ -27,16 +41,19 @@
 
 .navation a {
     text-decoration: none;
-    color: #ed900e; /* Màu của liên kết */
+    color: blue; /* Màu của liên kết */
 }
 
 .navation a:hover {
     text-decoration: underline;
 }
 .navation span {
-    margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
+    margin-right: 0px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
 }
 
+.tourTitle{
+    margin-bottom: 20px;
+}
 #vnt-main {
     position: relative;
 }
@@ -97,6 +114,7 @@ object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .thumbnail {
@@ -114,12 +132,11 @@ object-fit: cover;
 }
 
 .listDay{
-    /*position: relative;
-    border: 1px solid black;
-    margin: 5px;
+    position: relative;
+    margin: -8px;
     border-radius: 10px;
-    cursor: pointer;*/
-    padding-left: 30px;
+    cursor: pointer;
+    padding-left: 0px;
     background-color: white;
     margin-bottom: 20px;
 }
@@ -156,8 +173,7 @@ object-fit: cover;
     border-radius: 8px;
     padding-top: 15px;
     padding-left: 15px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+    margin: -2px;
 }
 .the-content.desc img {
     max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của phần tử cha */
