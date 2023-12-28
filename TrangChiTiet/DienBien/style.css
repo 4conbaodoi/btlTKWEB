@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
-<<<<<<< HEAD
+
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
@@ -15,15 +15,13 @@
     height: 40px;
     align-items: center;
 }
-=======
 
 
 body{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
 }
 
->>>>>>> a351da70553ef743084a1c299b17feaf59d471fb
 .navation ul {
     list-style: none;
     padding: 0;
@@ -194,7 +192,7 @@ object-fit: cover;
 
 
 .sidebar{
-    position: fixed;
+    position: relative;
     background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
     border-color: #ed900e;
     padding: 15px;
@@ -207,11 +205,15 @@ object-fit: cover;
     font-size: small;
 }
 
-#submit-button {
+button {
     display: block;
     margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
-    margin-left: 350px;
+    background-color: #ffd395;
     position: relative;
+}
+
+button:hover{
+    background-color: #ed900e;
 }
 
 #vnt-sidebar form {
@@ -225,9 +227,6 @@ object-fit: cover;
     box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
 }
 
-#submit-button {
-    align-self: flex-end; /* Đẩy nút gửi về cuối cùng của form */
-}
 
 
 
