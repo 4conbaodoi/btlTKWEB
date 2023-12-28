@@ -36,20 +36,3 @@
 .navation span {
     margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
 }
-
-
-
-
-.swiper-container {
-  width: 100%;
-  margin: 20px auto;
-}
-
-.swiper-slide {
-  text-align: center;
-}
-
-.swiper-slide img {
-  max-width: 100%;
-  height: auto;
-}
