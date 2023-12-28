@@ -41,7 +41,7 @@
 
 .navation a {
     text-decoration: none;
-    color: blue; /* Màu của liên kết */
+    color: rgb(5, 163, 153); /* Màu của liên kết */
 }
 
 .navation a:hover {
@@ -96,8 +96,8 @@ object-fit: cover;
     height: auto;
     margin-top: 0;
     font-size: 24px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 150, 74);
+    background-color: rgba(246, 222, 116, 0.447);
 }
 
 .swiper-button-next {
@@ -145,23 +145,23 @@ object-fit: cover;
 
 .titDay{
     position: relative;
-    border: 1px solid rgb(226, 14, 117);
+    border: 1px solid rgb(254, 134, 21);
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: pink;
+    background-color: rgb(255, 213, 154);
 }
 
 .contDay {
     position: relative;
     /*border: 1px solid black;*/
-    border: 1px solid rgba(53, 44, 49, 0.999);
+    border: 1px solid rgba(246, 154, 26, 0.999);
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #fffbdf;
 }
 
 .separator-line {
@@ -275,30 +275,57 @@ object-fit: cover;
     padding: 15px;
     border-radius: 5px;
 }*/
+<<<<<<< Updated upstream
 /*
 #vnt-sidebar{
     position: relative;
     background-color: red;
 }*/
+=======
+
+
+.contact-form p{
+    font-size: x-small;
+}
+>>>>>>> Stashed changes
 
 .sidebar {
     position: fixed;
     width: 400px;
     /*background-color: yellow;*/
     background-color: rgb(255, 253, 250);
+<<<<<<< Updated upstream
     border: solid 1px #ed900e;
     padding: 10px;
     margin-bottom: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
+=======
+    position: -webkit-sticky;
+    position:sticky;
+    border: solid 1px #ffd9a4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
+    /*z-index: 1000;*/
+>>>>>>> Stashed changes
     transition: top 0.3s; /* Thêm transition để có hiệu ứng mượt mà khi thay đổi top */
 }
 
 
-#submit-button {
+button {
     display: block;
     margin-top: 5px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
     position: relative;
+    background-color: #ffd9a4;
+    border-color: #ca7908;
+    color: #c96b31;
+}
+
+button:hover{
+    background-color: orange;
+    font-weight: bold;
+    color: #fff;
 }
 
 #vnt-sidebar form {
@@ -310,4 +337,14 @@ object-fit: cover;
     margin-bottom: 0px;  /*Khoảng cách giữa các ô nhập */
     width: 100%; /* Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form */
     box-sizing: border-box;  /*Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
+}
+
+#success-message{
+    display: block;
+    background-color: rgb(43, 156, 109);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
 }

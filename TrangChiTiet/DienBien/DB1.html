@@ -350,7 +350,8 @@
                         <div id="flagEnd"></div>
                     </div>
 
-                  
+                     <!-- Thông báo thành công -->
+                    
                     <div id="vnt-sidebar" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
                          <!-- Sidebar -->
                          <div class="sidebar">
@@ -365,13 +366,14 @@
                                     <li><strong>Giá tour:</strong> Để biết giá, vui lòng liên hệ</li>
                                 </ul>
                             </div>
-                        
+
+                            
                             <!-- Ô điền thông tin -->
                             <div class="contact-form">
                                 <form>
                                     <div class="mb-3">
                                         <label for="phone">Số Điện Thoại</label>
-                                        <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email">Email</label>
@@ -379,13 +381,21 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="name">Họ và Tên</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+                                        <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên">
                                     </div>
+<<<<<<< Updated upstream
                         
                                     
                                         <!-- Nút Gửi -->
                                     <button id="submit-button" class="btn btn-primary">Gửi</button>
                                     
+=======
+                                    <!-- Nút Gửi -->
+                                    <button type="button" onclick="showSuccessMessage()">Gửi</button>
+
+                                    <!-- Thông báo thành công (ẩn ban đầu) -->
+                                    <div id="success-message" style="display: none;">Đặt tour thành công!</div>
+>>>>>>> Stashed changes
                                 </form>
                             </div>
                         </div>
@@ -403,10 +413,6 @@
             </div>
         </div> 
     </div>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <!-- Thêm thư viện jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEX/ByfAimAHaTKtk9E1Wrmf5VBYF8Eni+5F0" crossorigin="anonymous"></script>
-
 </body>
