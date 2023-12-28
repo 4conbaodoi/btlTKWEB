@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
-<<<<<<< HEAD
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
@@ -15,21 +14,11 @@
     height: 40px;
     align-items: center;
 }
-=======
-
-
-body{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
->>>>>>> a351da70553ef743084a1c299b17feaf59d471fb
 .navation ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: #fbe4c5d9;
 }
 
 .navation li {
@@ -96,7 +85,6 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -106,8 +94,8 @@ object-fit: cover;
     height: auto;
     margin-top: 0;
     font-size: 24px;
-    color: rgb(205, 130, 1);
-    background-color: rgba(255, 243, 211, 0.348);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .swiper-button-next {
@@ -118,7 +106,9 @@ object-fit: cover;
     left: 0;
 }
 
-
+#vnt-sidebar {
+    z-index: 1; /* Đảm bảo sidebar hiển thị trên slider */
+}
 
 #thumbnail-container {
     display: flex;
@@ -153,12 +143,12 @@ object-fit: cover;
 
 .titDay{
     position: relative;
-    border: 1px solid rgb(255, 144, 17);
+    border: 1px solid rgb(226, 14, 117);
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgba(255, 240, 144, 0.603);
+    background-color: pink;
 }
 
 .contDay {
@@ -169,7 +159,7 @@ object-fit: cover;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fff4dd;
+    background-color: #ddd;
 }
 
 .separator-line {
@@ -178,12 +168,14 @@ object-fit: cover;
     margin-bottom: 15px;
 }
 .flag-box {
-    background-color:#ffeaea;
+    background-color:#ddd;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding-top: 15px;
     padding-left: 15px;
     margin: -2px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .the-content.desc img {
     max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của phần tử cha */
@@ -192,15 +184,61 @@ object-fit: cover;
     margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
 }
 
+/*
+.sidebar {
+    width: 100%;
+    background-color: rgb(255, 253, 250);  
+    border-color: solid 1px #ed900e;
+    padding: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);  
+}
 
+.tour-info h3,
+.contact-form h3 {
+    color: #333;
+}
+
+.tour-info ul,
+.contact-form form {
+    list-style: none;
+    padding: 0;
+}
+
+.tour-info li {
+    margin-bottom: 10px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+/*
 .sidebar{
-    position: fixed;
-    background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
+    width: 100%;
+    background-color: rgb(255, 253, 250); /* Màu nền của sidebar 
     border-color: #ed900e;
     padding: 15px;
     margin-bottom: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng */
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng 
 }
 
 .container p{
@@ -209,27 +247,61 @@ object-fit: cover;
 
 #submit-button {
     display: block;
-    margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
+    margin-top: 10px;  Khoảng cách giữa nút gửi và hộp nhập họ tên 
     margin-left: 350px;
     position: relative;
 }
 
 #vnt-sidebar form {
     display: flex;
-    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    flex-direction: column;  Sắp xếp các phần tử theo chiều dọc 
 }
 
 #vnt-sidebar input {
-    margin-bottom: 10px; /* Khoảng cách giữa các ô nhập */
-    width: 100%; /* Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form */
-    box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
+    margin-bottom: 10px;  Khoảng cách giữa các ô nhập 
+    width: 100%;  Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form 
+    box-sizing: border-box;  Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập 
 }
 
 #submit-button {
-    align-self: flex-end; /* Đẩy nút gửi về cuối cùng của form */
+    align-self: flex-end;  Đẩy nút gửi về cuối cùng của form 
+}*/
+
+/* Thêm kiểu cho sidebar và form */
+/*#vnt-sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}*/
+
+
+
+.sidebar {
+    width: 100%;
+    background-color: rgb(255, 253, 250);
+    border: solid 1px #ed900e;
+    padding: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
+    z-index: 1000;
+    transition: top 0.3s; /* Thêm transition để có hiệu ứng mượt mà khi thay đổi top */
 }
 
 
+#submit-button {
+    display: block;
+    margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
+    position: relative;
+}
 
+#vnt-sidebar form {
+    display: flex;
+    flex-direction: column;  /*Sắp xếp các phần tử theo chiều dọc */
+}
 
-
+#vnt-sidebar input {
+    margin-bottom: 0px;  /*Khoảng cách giữa các ô nhập *?
+    width: 100%; /* Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form */
+    box-sizing: border-box;  /*Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
+}
