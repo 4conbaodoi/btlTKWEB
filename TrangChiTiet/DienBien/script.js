@@ -89,3 +89,15 @@
             }
         });
     });
+
+
+//Nút thông báo sau khi gửi thông tin đặt tour
+// script.js
+$(document).ready(function () {
+    // Bắt sự kiện click của nút "Gửi"
+    $('#submit-button').click(function () {
+        alert('Đặt tour thành công!');
+    });
+});
+
+    
