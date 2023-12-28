@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐĂNG NHẬP | TOUR DU LỊCH</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="" id="loginForm" onsubmit="validateForm(event)">
+            <h2>Đăng Nhập</h2>
+            <hr style="margin-top: 0.8em" />
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="Email" id="username" name="username" required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" id="password" name="password" required />
+              <label for="">Mật khẩu</label>
+              <span id="error-pass-invalid" style="color: red"></span>
+            </div>
+
+            <div class="forget">
+              <label for=""><input type="checkbox" style="" />Ghi nhớ</label>
+              <a href="#quenmatkhau">Quên mật khẩu</a>
+            </div>
+            <button>Đăng nhập</button>
+            <div class="register">
+              <p>
+                Bạn chưa có tài khoản?<a href="dangky.html">Đăng kí ngay</a>
+              </p>
+            </div>
+            <div class="quaylai">
+              Quay lại trang chủ
+              <a href="../TrangChu/index.html"
+                ><ion-icon name="play-back-outline"></ion-icon>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        let showError = document.getElementById("error-pass-invalid");
+        // Kiểm tra tính hợp lệ của tên đăng nhập và mật khẩu
+
+        // Nếu tên đăng nhập ngắn hơn 4 ký tự và mật khẩu ngắn hơn 6 ký tự thì không hợp lệ
+        if (username.length < 4) {
+          alert("Tên đăng nhập phải dài ít nhất 4 ký tự.");
+          return false;
+        }
+        var passwordRegex = /^[A-Za-z0-9]+$/; //Biểu thức này chỉ chấp nhận các ký tự chữ cái (cả chữ hoa và chữ thường) và số từ 0 đến 9.
+        if (password.length < 6 || !password.match(passwordRegex)) {
+          //   alert(
+          //     "Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không được chứa kí tự đặc biệt."
+          //   );
+          //Hiển thị thông báo lỗi
+          showError.innerHTML =
+            "Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không được chứa kí tự đặc biệt.";
+          return false;
+        } else {
+          showError.innerHTML = "";
+        }
+        alert("Đăng nhập thành công.");
+        // Đăng nhập thành công về trang chủ
+        window.location.href = "../TrangChu/final.html";
+        return false;
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
