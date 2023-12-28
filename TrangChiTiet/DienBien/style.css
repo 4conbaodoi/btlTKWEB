@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+
 .navation ul {
     list-style: none;
     padding: 0;
@@ -33,4 +35,21 @@
 }
 .navation span {
     margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
+}
+
+
+
+
+.swiper-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
 }
