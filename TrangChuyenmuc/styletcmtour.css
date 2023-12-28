@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+
+
+.swiper-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root{
+  --orange:#ffa500;
+}
+
+*{
+  font-family: 'Slabo 27px', serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.packages .heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.packages .heading span{
+  font-size: 3.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.packages .heading span.space{
+  background:none;
+}
+
+.packages .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.packages .container .row{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  /*box-shadow: 0 1rem 2rem rgba(0,0,0,.1);*/
+  padding-bottom: 5%;
+}
+
+.packages .container .row .col-sm{
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10% ;
+  border: 2px solid orange;
+  margin-right: 1cm;
+  padding: 0.5%;
+  padding-bottom: 0%;
+}
+
+.packages .container .col-sm img{
+  height: 25rem;
+  width:100%;
+  object-fit: cover; /* Để ảnh trong cột dạng cover và fit với cột*/
+  filter: drop-shadow(0 0 2px rgb(72, 62, 62));
+}
+
+.packages .container .col-sm .content{
+  padding:2rem;
+}
+
+.packages .container .col-sm .content h3{
+  font-size:2rem;
+  color:#333;
+  font-weight: bold;
+}
+
+.packages .container .col-sm .content h3 i{
+  color:var(--orange);
+}
+
+.packages .container .col-sm .content p{
+  font-size:1.7rem;
+  color:#666;
+  padding:1rem 0;
+  text-transform: none;
+}
+
+.packages .container .col-sm .content .stars i{
+  font-size:1.7rem;
+  color:var(--orange);
+}
+
+.packages .container .col-sm .content .price{
+  font-size: 2rem;
+  color:#333;
+  padding-top: 1rem;
+}
+
+.packages .container .col-sm .content .price span{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.packages .container .col-sm:hover{
+   box-shadow:  0 3rem 2rem #FFE4B5;
+}
+
+.btn{
+  display: inline-block;
+  background:var(--orange);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:#fff;
+  padding: 0 auto;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 7px;
+  margin-left: 45%;
+  margin-bottom: 20px;
+  margin-top: 2px;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange); /*root đặt màu orange là biến nên phần tử này là biến tái sử dụng màu cam*/ 
+}
+
+ul{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+ul li{
+  text-align: center;
+  list-style: none;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+ul li.pageNumber{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+ul li.pageNumber.active a,
+ul, li.pageNumber:hover a{
+  background-color: rgba(255, 165, 0,.2);
+  color: #777;
+}

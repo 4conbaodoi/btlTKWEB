@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+<<<<<<< HEAD
+.wrapCont{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+.breadcrumb{
+    background: #f2f5f8;
+    padding-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+=======
+
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+>>>>>>> a351da70553ef743084a1c299b17feaf59d471fb
+.navation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #fbe4c5d9;
+}
+
+.navation li {
+    margin-right: 5px; /* Khoảng cách giữa các mục breadcrumb */
+    position: relative;
+}
+
+.navation li::after {
+    content: '>'; /* Nội dung của phần tử ::after */
+    position:git  absolute;
+    top: 50%;
+    right: -20px; /* Khoảng cách giữa mục và dấu ">" */
+    transform: translateY(-50%);
+    color: #333; /* Màu của dấu ">" */
+}
+
+.navation li:last-child::after {
+    content: none; /* Loại bỏ dấu ">" ở cuối cùng */
+}
+
+.navation a {
+    text-decoration: none;
+    color: blue; /* Màu của liên kết */
+}
+
+.navation a:hover {
+    text-decoration: underline;
+}
+.navation span {
+    margin-right: 0px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
+}
+
+.tourTitle{
+    margin-bottom: 20px;
+}
+#vnt-main {
+    position: relative;
+}
+
+#vnt-slider {
+    width: 100%;
+    height: 500px; /* Điều chỉnh độ cao của slider theo mong muốn */
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách giữa slider và phần nội dung */
+    overflow: hidden; /* Loại bỏ nội dung vượt ra khỏi slider */
+}
+
+#vnt-slider img {
+    width: 100%; /* Đảm bảo ảnh trong slider chiếm toàn bộ chiều rộng */
+    height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của slider */
+    object-fit: cover; /* Hiển thị ảnh mà không bị méo */
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ddd; /* Border for the slider */
+    border-radius: 8px; /* Border radius for the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.swiper-slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    font-size: 24px;
+    color: rgb(205, 130, 1);
+    background-color: rgba(255, 243, 211, 0.348);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+
+
+#thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 60px; /* Điều chỉnh kích thước của thumbnail */
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #ddd; /* Border for each thumbnail */
+    border-radius: 8px; /* Border radius for each thumbnail */
+}
+
+.thumbnail:hover {
+    transform: scale(1.2); /* Hiệu ứng hover */
+}
+
+.listDay{
+    position: relative;
+    margin: -8px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 0px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.titDay{
+    position: relative;
+    border: 1px solid rgb(255, 144, 17);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 240, 144, 0.603);
+}
+
+.contDay {
+    position: relative;
+    /*border: 1px solid black;*/
+    border: 1px solid rgba(53, 44, 49, 0.999);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff4dd;
+}
+
+.separator-line {
+    border-bottom: 2px solid #ddd; /* Màu và kiểu đường kẻ phân cách */
+    margin-top: 5px; /* Khoảng cách từ đường kẻ phân cách đến nội dung phía trên */
+    margin-bottom: 15px;
+}
+.flag-box {
+    background-color:#ffeaea;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: -2px;
+}
+.the-content.desc img {
+    max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ khung hình của ảnh được bảo toàn */
+    display: block; /* Không bị chồng lấn dòng khác */
+    margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
+}
+
+
+.sidebar{
+    position: fixed;
+    background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
+    border-color: #ed900e;
+    padding: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng */
+}
+
+.container p{
+    font-size: small;
+}
+
+#submit-button {
+    display: block;
+    margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
+    margin-left: 350px;
+    position: relative;
+}
+
+#vnt-sidebar form {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+}
+
+#vnt-sidebar input {
+    margin-bottom: 10px; /* Khoảng cách giữa các ô nhập */
+    width: 100%; /* Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form */
+    box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
+}
+
+#submit-button {
+    align-self: flex-end; /* Đẩy nút gửi về cuối cùng của form */
+}
+
+
+
+
+
