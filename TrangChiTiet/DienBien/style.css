@@ -110,12 +110,10 @@ object-fit: cover;
 
 .swiper-button-next {
     right: 0;
-    color: #ed900e;
 }
 
 .swiper-button-prev {
     left: 0;
-    color: #ed900e;
 }
 
 
@@ -194,7 +192,7 @@ object-fit: cover;
 
 
 .sidebar{
-    position: fixed;
+    position: relative;
     background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
     border-color: #ed900e;
     padding: 15px;
@@ -207,11 +205,15 @@ object-fit: cover;
     font-size: small;
 }
 
-#submit-button {
+button {
     display: block;
     margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
-    margin-left: 350px;
+    background-color: #ffd395;
     position: relative;
+}
+
+button:hover{
+    background-color: #ed900e;
 }
 
 #vnt-sidebar form {
@@ -225,9 +227,6 @@ object-fit: cover;
     box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
 }
 
-#submit-button {
-    align-self: flex-end; /* Đẩy nút gửi về cuối cùng của form */
-}
 
 
 
