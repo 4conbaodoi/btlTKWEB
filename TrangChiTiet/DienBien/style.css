@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+<<<<<<< HEAD
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
@@ -14,11 +15,21 @@
     height: 40px;
     align-items: center;
 }
+=======
+
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+>>>>>>> a351da70553ef743084a1c299b17feaf59d471fb
 .navation ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    background-color: #fbe4c5d9;
 }
 
 .navation li {
@@ -85,6 +96,7 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -94,8 +106,8 @@ object-fit: cover;
     height: auto;
     margin-top: 0;
     font-size: 24px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(205, 130, 1);
+    background-color: rgba(255, 243, 211, 0.348);
 }
 
 .swiper-button-next {
@@ -106,9 +118,7 @@ object-fit: cover;
     left: 0;
 }
 
-#vnt-sidebar {
-    z-index: 1; /* Đảm bảo sidebar hiển thị trên slider */
-}
+
 
 #thumbnail-container {
     display: flex;
@@ -143,12 +153,12 @@ object-fit: cover;
 
 .titDay{
     position: relative;
-    border: 1px solid rgb(226, 14, 117);
+    border: 1px solid rgb(255, 144, 17);
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: pink;
+    background-color: rgba(255, 240, 144, 0.603);
 }
 
 .contDay {
@@ -159,7 +169,7 @@ object-fit: cover;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #fff4dd;
 }
 
 .separator-line {
@@ -168,7 +178,7 @@ object-fit: cover;
     margin-bottom: 15px;
 }
 .flag-box {
-    background-color:#ddd;
+    background-color:#ffeaea;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding-top: 15px;
@@ -181,4 +191,45 @@ object-fit: cover;
     display: block; /* Không bị chồng lấn dòng khác */
     margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
 }
+
+
+.sidebar{
+    position: fixed;
+    background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
+    border-color: #ed900e;
+    padding: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng */
+}
+
+.container p{
+    font-size: small;
+}
+
+#submit-button {
+    display: block;
+    margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
+    margin-left: 350px;
+    position: relative;
+}
+
+#vnt-sidebar form {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+}
+
+#vnt-sidebar input {
+    margin-bottom: 10px; /* Khoảng cách giữa các ô nhập */
+    width: 100%; /* Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form */
+    box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập */
+}
+
+#submit-button {
+    align-self: flex-end; /* Đẩy nút gửi về cuối cùng của form */
+}
+
+
+
+
 

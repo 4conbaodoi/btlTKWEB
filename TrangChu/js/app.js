@@ -30,6 +30,7 @@ navLinks.forEach((navLink) => {
 });
 //mode
 // banner slideshow
+
 const bannerContent = document.getElementById("banner-content");
 let currentIndex = 0;
 
@@ -41,25 +42,30 @@ function showNextSlide() {
   updateSlide();
 }
 
-function showPreviousSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = bannerContent.children.length - 1;
-  }
-  updateSlide();
-}
-
 function updateSlide() {
   const translateValue = -currentIndex * 100 + "%";
   bannerContent.style.transform = "translateX(" + translateValue + ")";
 }
 
-// Auto slide every 3 seconds (adjust as needed)
+// Tự động chuyển slide mỗi 3 giây (điều chỉnh nếu cần)
 setInterval(showNextSlide, 3000);
 
-// Optional: Add event listeners for manual navigation
-// Example with buttons
-document
-  .getElementById("prevButton")
-  .addEventListener("click", showPreviousSlide);
-document.getElementById("nextButton").addEventListener("click", showNextSlide);
+// alert liên kết
+var zalolink = document.getElementById("zalo-link");
+var instagramlink = document.getElementById("Instagram-link");
+var tiktoklink = document.getElementById("TikTok-link");
+
+zalolink.onclick = function (event) {
+  // Ngăn chặn hành vi mặc định của liên kết
+  event.preventDefault();
+  // Hiển thị thông báo khi click
+  alert("Chúng tôi đang phát triển nền tảng Zalo!");
+};
+tiktoklink.onclick = function (event) {
+  event.preventDefault();
+  alert("Chúng tôi đang phát triển nền tảng TikTok!");
+};
+instagramlink.onclick = function (event) {
+  event.preventDefault();
+  alert("Chúng tôi đang phát triển nền tảng Instagram!");
+};
