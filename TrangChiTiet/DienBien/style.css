@@ -36,3 +36,81 @@
 .navation span {
     margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
 }
+/* --------------------------------------*/
+
+
+#vnt-main {
+    position: relative;
+}
+
+#vnt-slider {
+    width: 100%;
+    height: 500px; /* Điều chỉnh độ cao của slider theo mong muốn */
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách giữa slider và phần nội dung */
+    overflow: hidden; /* Loại bỏ nội dung vượt ra khỏi slider */
+}
+
+#vnt-slider img {
+    width: 100%; /* Đảm bảo ảnh trong slider chiếm toàn bộ chiều rộng */
+    height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của slider */
+    object-fit: cover; /* Hiển thị ảnh mà không bị méo */
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ddd; /* Border for the slider */
+    border-radius: 8px; /* Border radius for the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.swiper-slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+#vnt-sidebar {
+    z-index: 1; /* Đảm bảo sidebar hiển thị trên slider */
+}
+
+#thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 60px; /* Điều chỉnh kích thước của thumbnail */
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #ddd; /* Border for each thumbnail */
+    border-radius: 8px; /* Border radius for each thumbnail */
+}
+
+.thumbnail:hover {
+    transform: scale(1.2); /* Hiệu ứng hover */
+}
