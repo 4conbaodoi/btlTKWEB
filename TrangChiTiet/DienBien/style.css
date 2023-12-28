@@ -148,7 +148,7 @@ object-fit: cover;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #fff4dd;
 }
 
 .separator-line {
@@ -157,7 +157,7 @@ object-fit: cover;
     margin-bottom: 15px;
 }
 .flag-box {
-    background-color:#ddd;
+    background-color:#ffeaea;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding-top: 15px;
