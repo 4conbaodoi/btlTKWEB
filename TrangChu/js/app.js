@@ -69,3 +69,32 @@ instagramlink.onclick = function (event) {
   event.preventDefault();
   alert("Chúng tôi đang phát triển nền tảng Instagram!");
 };
+
+var buttom_timkiem = document.getElementById("timkiem");
+buttom_timkiem.onclick = function () {
+  alert("Chức năng đang được phát triển!");
+};
+
+// Lọc Tìm Kiếm
+document.addEventListener("DOMContentLoaded", function () {
+  var inputElement = document.getElementById("input-datalist");
+  var datalistElement = document.getElementById("list-timezone");
+
+  inputElement.addEventListener("input", function () {
+    var searchTerm = inputElement.value.toLowerCase();
+
+    // Lọc các option trong datalist
+    var options = datalistElement.getElementsByTagName("option");
+    for (var i = 0; i < options.length; i++) {
+      var optionValue = options[i].value.toLowerCase();
+      var optionElement = options[i];
+
+      // Hiển thị hoặc ẩn option tùy thuộc vào kết quả tìm kiếm
+      if (optionValue.indexOf(searchTerm) !== -1) {
+        optionElement.style.display = "block";
+      } else {
+        optionElement.style.display = "none";
+      }
+    }
+  });
+});
