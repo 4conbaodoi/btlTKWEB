@@ -14,7 +14,7 @@
 
 .navation li::after {
     content: '>'; /* Nội dung của phần tử ::after */
-    position: absolute;
+    position:git  absolute;
     top: 50%;
     right: -7px; /* Khoảng cách giữa mục và dấu ">" */
     transform: translateY(-50%);
@@ -36,8 +36,6 @@
 .navation span {
     margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
 }
-/* --------------------------------------*/
-
 
 #vnt-main {
     position: relative;
@@ -114,3 +112,57 @@ object-fit: cover;
 .thumbnail:hover {
     transform: scale(1.2); /* Hiệu ứng hover */
 }
+
+.listDay{
+    /*position: relative;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;*/
+    padding-left: 30px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.titDay{
+    position: relative;
+    border: 1px solid rgb(226, 14, 117);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.contDay {
+    position: relative;
+    /*border: 1px solid black;*/
+    border: 1px solid rgba(53, 44, 49, 0.999);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.separator-line {
+    border-bottom: 2px solid #ddd; /* Màu và kiểu đường kẻ phân cách */
+    margin-top: 5px; /* Khoảng cách từ đường kẻ phân cách đến nội dung phía trên */
+    margin-bottom: 15px;
+}
+.flag-box {
+    background-color:#ddd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.the-content.desc img {
+    max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ khung hình của ảnh được bảo toàn */
+    display: block; /* Không bị chồng lấn dòng khác */
+    margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
+}
+
