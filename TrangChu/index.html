@@ -145,10 +145,21 @@
             <div class="app-search">
               <form>
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Bạn muốn đi đâu?..." style="font-size: 13px;" id="input-url3" data-filter="https://iqbalfn.com/timezone/?q=#QUERY#"/>
+                  <input type="text" class="form-control" placeholder="Bạn muốn đi đâu?..." style="font-size: 13px;" list="list-timezone" id="input-datalist"/>
+                  <datalist id="list-timezone">
+                    <!--Thêm link các tour liên quan vào đây-->
+                    <option>Điện Biên</option>
+                    <option>Sapa</option>
+                    <option>Hà Giang</option>
+                    <option>Mộc Châu</option>
+                    <option>Sơn La</option>
+                    <option>Cao Bằng</option>
+                    <option>Bắc Kạn</option>
+                    <option>Leo Núi</option>
+                </datalist>
                   <span class="mdi mdi-magnify search-icon"></span>
                   <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit" class="" style="font-size: 13px;">
+                    <button class="btn btn-primary" type="submit" id="timkiem" style="font-size: 13px;">
                       Tìm Kiếm
                     </button>
                   </div>
@@ -174,24 +185,20 @@
                       <div class="arrow-down"></div>
                     </a>
                     <div class="dropdown-menu">
+                      <!--Thêm link các tour tương ứng nhé-->
                       <a href="#" class="dropdown-item">
-                        Hòa Bình
+                        Điện Biên
                       </a>
                       <a href="#" class="dropdown-item">
                           Sơn La</a>
                       <div class="dropdown">
                         <a class="dropdown-item" href="#">
-                          Điện Biên
-                        </a>
-                      </div>
-                      <div class="dropdown">
-                        <a class="dropdown-item" href="#">
-                          Sapa
-                        </a>
-                      </div>
-                      <div class="dropdown">
-                        <a class="dropdown-item" href="#">
                           Lai Châu
+                        </a>
+                      </div>
+                      <div class="dropdown">
+                        <a class="dropdown-item" href="#">
+                          Leo Núi
                         </a>
                       </div>
                     </div>
@@ -1099,18 +1106,7 @@
       <button id="closeButton" onclick="closePopup()">X</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', e => {
-        $('#input-url3').autocomplete({
-            onItemRendered(el, item) {
-                console.log('option', item)
-            }
-        })
-        $('#input-url3').on('itemrender.bs.autocomplete', e => {
-            let item = e.item
-            console.log('event', item)
-        })
-      }, false);
-  </script>
+    <!--Thu vien js tim kiem-->
+
   </body>
 </html>
