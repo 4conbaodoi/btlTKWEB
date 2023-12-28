@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tour Hà Nội - Điện Biên 3 ngày 2 đêm mùa hoa ban trắng</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 </html>
 <body>
@@ -13,28 +14,31 @@
         <div class="vnt-main-top">
             <div id="vnt-navation" class="breadcrumb">
                 <div class="wrapper">
+                  
                     <div class="navation">
-                        <ul itemscope itemtype="#link bootstrap">
-                            <li itemprop="itemListElement" itemscope itemtype="#linkbootstrap">
-                                <a itemprop="item" title="Trang chủ" href="#">
+                        <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <!-- Bước 1: Trang chủ -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" title="Trang chủ" href="../../TrangChu/trangchu.html">
                                     <span itemprop="name">Trang chủ</span>
                                 </a>
                                 <meta itemprop="position" content="1"> 
-                                <!--::after-->
                             </li>
-                            <li itemprop="itemListElement" itemscope itemtype="#linkbootstrap">
-                                <a itemprop="item" href="#">
-                                    <span itemprop="name">Điện Biên</span>
+                    
+                            <!-- Bước 2: Điện Biên -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="../../TrangChuyenmuc/ChuyenMucChiTiet.html">
+                                    <span itemprop="name">Điện Biên </span>
                                 </a>
                                 <meta itemprop="position" content="2"> 
-                                <!--::after-->
                             </li>
-                            <li itemprop="itemListElement" itemscope itemtype="#linkbootstrap">
-                                <a itemprop="item" href="#">
+                    
+                            <!-- Bước 3: Mùa hoa cải trắng 3N2D -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="DB1.html">
                                     <span itemprop="name">Mùa hoa cải trắng 3N2D</span>
                                 </a>
                                 <meta itemprop="position" content="3"> 
-                                <!--::after-->
                             </li>
                         </ul>
                     </div>

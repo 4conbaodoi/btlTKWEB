@@ -1,0 +1,36 @@
+.navation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navation li {
+    margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb */
+    position: relative;
+}
+
+.navation li::after {
+    content: '>'; /* Nội dung của phần tử ::after */
+    position: absolute;
+    top: 50%;
+    right: -7px; /* Khoảng cách giữa mục và dấu ">" */
+    transform: translateY(-50%);
+    color: #333; /* Màu của dấu ">" */
+}
+
+.navation li:last-child::after {
+    content: none; /* Loại bỏ dấu ">" ở cuối cùng */
+}
+
+.navation a {
+    text-decoration: none;
+    color: #ed900e; /* Màu của liên kết */
+}
+
+.navation a:hover {
+    text-decoration: underline;
+}
+.navation span {
+    margin-right: 10px; /* Khoảng cách giữa các mục breadcrumb (đã thêm vào) */
+}
