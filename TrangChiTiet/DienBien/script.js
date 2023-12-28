@@ -91,46 +91,13 @@
     });
 
 
-// Đoạn mã cuộn sidebar
-$(document).ready(function() {
-    // Lấy đối tượng sidebar
-    var sidebar = $('#vnt-sidebar');
-
-    // Xác định vị trí ban đầu của sidebar
-    var sidebarTop = sidebar.offset().top;
-
-    // Xử lý sự kiện khi cuộn trang
-    $(window).scroll(function() {
-        // Lấy vị trí hiện tại khi cuộn
-        var scrollPos = $(window).scrollTop();
-
-        // Kích thước cố định của sidebar
-        var sidebarHeight = sidebar.outerHeight();
-
-        // Kiểm tra xem cuộn đến đâu và di chuyển sidebar
-        if (scrollPos >= sidebarTop) {
-            sidebar.css({
-                'position': 'fixed',
-                'top': '20px' // Điều chỉnh giá trị top tùy thuộc vào yêu cầu của bạn
-            });
-        } else {
-            sidebar.css({
-                'position': 'relative',
-                'top': 'auto'
-            });
-        }
-    });
-});
-
-
-
 //Nút thông báo sau khi gửi thông tin đặt tour
 // script.js
-$(document).ready(function() {
-    $('#submit-button').click(function() {
+$(document).ready(function () {
+    // Bắt sự kiện click của nút "Gửi"
+    $('#submit-button').click(function () {
         alert('Đặt tour thành công!');
     });
 });
-
 
     
