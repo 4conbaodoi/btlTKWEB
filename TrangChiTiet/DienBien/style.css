@@ -186,121 +186,20 @@ object-fit: cover;
     margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
 }
 
-/*
-.sidebar {
-    width: 100%;
-    background-color: rgb(255, 253, 250);  
-    border-color: solid 1px #ed900e;
-    padding: 15px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);  
-}
-
-.tour-info h3,
-.contact-form h3 {
-    color: #333;
-}
-
-.tour-info ul,
-.contact-form form {
-    list-style: none;
-    padding: 0;
-}
-
-.tour-info li {
-    margin-bottom: 10px;
-}
-
-.contact-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form p {
-    font-size: 12px;
-    color: #777;
-    margin-top: 10px;
-}
-/*
-.sidebar{
-    width: 100%;
-    background-color: rgb(255, 253, 250); /* Màu nền của sidebar 
-    border-color: #ed900e;
-    padding: 15px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng 
-}
-
-.container p{
-    font-size: small;
-}
-
-#submit-button {
-    display: block;
-    margin-top: 10px;  Khoảng cách giữa nút gửi và hộp nhập họ tên 
-    margin-left: 350px;
-    position: relative;
-}
-
-#vnt-sidebar form {
-    display: flex;
-    flex-direction: column;  Sắp xếp các phần tử theo chiều dọc 
-}
-
-#vnt-sidebar input {
-    margin-bottom: 10px;  Khoảng cách giữa các ô nhập 
-    width: 100%;  Đảm bảo rằng các ô nhập sẽ chiếm toàn bộ chiều rộng của form 
-    box-sizing: border-box;  Đảm bảo rằng padding và border không làm tăng kích thước của ô nhập 
-}
-
-#submit-button {
-    align-self: flex-end;  Đẩy nút gửi về cuối cùng của form 
-}*/
-
-/* Thêm kiểu cho sidebar và form */
-/*#vnt-sidebar {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 5px;
-}*/
-<<<<<<< Updated upstream
-/*
-#vnt-sidebar{
-    position: relative;
-    background-color: red;
-}*/
-=======
-
 
 .contact-form p{
     font-size: x-small;
 }
->>>>>>> Stashed changes
 
 .sidebar {
     position: fixed;
     width: 400px;
-    /*background-color: yellow;*/
     background-color: rgb(255, 253, 250);
-<<<<<<< Updated upstream
     border: solid 1px #ed900e;
     padding: 10px;
     margin-bottom: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
-=======
     position: -webkit-sticky;
     position:sticky;
     border: solid 1px #ffd9a4;
@@ -308,7 +207,6 @@ object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
     /*z-index: 1000;*/
->>>>>>> Stashed changes
     transition: top 0.3s; /* Thêm transition để có hiệu ứng mượt mà khi thay đổi top */
 }
 
