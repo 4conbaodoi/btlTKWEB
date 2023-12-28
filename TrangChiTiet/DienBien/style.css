@@ -172,28 +172,25 @@ object-fit: cover;
     margin: 0 auto; /* Canh giữa ảnh trong trường hợp có thể hiển thị theo chiều ngang */
 }
 
-/* Bổ sung một số style để làm đẹp sidebar */
-.scrolling-sidebar {
+
+.sidebar{
+    position: fixed;
     background-color: rgb(255, 253, 250); /* Màu nền của sidebar */
     border-color: #ed900e;
     padding: 15px;
+    margin-bottom: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215); /* Hiệu ứng đổ bóng */
-}
-
-.sidebar{
-    position:sticky;
 }
 
 .container p{
     font-size: small;
 }
-/* Thêm đoạn mã CSS sau vào file của bạn hoặc trong thẻ <style> trong phần <head> của trang web */
 
 #submit-button {
     display: block;
     margin-top: 10px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
-    margin-left: 400px;
+    margin-left: 350px;
     position: relative;
 }
 
