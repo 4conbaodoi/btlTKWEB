@@ -195,7 +195,6 @@ object-fit: cover;
     position: fixed;
     width: 400px;
     background-color: rgb(255, 253, 250);
-    border: solid 1px #ed900e;
     padding: 10px;
     margin-bottom: 100px;
     border-radius: 5px;
@@ -203,9 +202,6 @@ object-fit: cover;
     position: -webkit-sticky;
     position:sticky;
     border: solid 1px #ffd9a4;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
     /*z-index: 1000;*/
     transition: top 0.3s; /* Thêm transition để có hiệu ứng mượt mà khi thay đổi top */
 }
@@ -216,8 +212,9 @@ button {
     margin-top: 5px; /* Khoảng cách giữa nút gửi và hộp nhập họ tên */
     position: relative;
     background-color: #ffd9a4;
-    border-color: #ca7908;
+    border-color: #f2a12f;
     color: #c96b31;
+    box-shadow: #4a4334;
 }
 
 button:hover{
