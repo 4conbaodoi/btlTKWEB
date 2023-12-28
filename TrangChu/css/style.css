@@ -149,7 +149,7 @@ section {
 
 .packages .container .col-sm .content h3 {
   font-size: 2rem;
-  color: #333;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -171,7 +171,7 @@ section {
 
 .packages .container .col-sm .content .price {
   font-size: 2rem;
-  color: #333;
+  color: #000000;
   padding-top: 1rem;
 }
 
@@ -227,7 +227,7 @@ section {
 
 .services .box-container .box h3 {
   font-size: 2.5rem;
-  color: #333;
+  color: #000000;
 }
 
 .services .box-container .box p {
@@ -295,15 +295,6 @@ section {
   transition: background-color 0.5s;
 }
 /*mode light dark*/
-.light-mode {
-  background-color: #ffffff; /* Màu nền khi ở chế độ sáng */
-  color: #000000; /* Màu chữ khi ở chế độ sáng */
-}
-
-.dark-mode {
-  background-color: #333333; /* Màu nền khi ở chế độ tối */
-  color: #ffffff; /* Màu chữ khi ở chế độ tối */
-}
 
 #giftButton {
   position: fixed;
@@ -597,7 +588,7 @@ a {
 }
 
 .copyright {
-  color: #ccc;
+  color: gray;
   font-size: 14px;
   margin-top: 20px;
 }
