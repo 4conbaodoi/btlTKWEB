@@ -43,7 +43,7 @@ section {
 
 .banner-content {
   display: flex;
-  transition: transform 1.2s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .banner-content img {
