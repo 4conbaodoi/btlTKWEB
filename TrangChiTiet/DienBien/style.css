@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
-<<<<<<< HEAD
+
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
@@ -15,15 +15,13 @@
     height: 40px;
     align-items: center;
 }
-=======
 
 
 body{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
 }
 
->>>>>>> a351da70553ef743084a1c299b17feaf59d471fb
 .navation ul {
     list-style: none;
     padding: 0;
@@ -112,10 +110,12 @@ object-fit: cover;
 
 .swiper-button-next {
     right: 0;
+    color: #ed900e;
 }
 
 .swiper-button-prev {
     left: 0;
+    color: #ed900e;
 }
 
 
