@@ -308,8 +308,10 @@ button:hover{
 }
 
 .card {
-    border-radius: 15px;
-    background-color: #efefef;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    /*border-radius: 15px;*/
+    /*background-color: green;*/
     border-color: var(--orange);
     border-width: 2px;
 }
@@ -328,17 +330,21 @@ button:hover{
 
 .card-image {
     overflow: hidden;
-    height: 200px;
-    border-radius: 15px 15px 0 0;
+    height: 280px;
+    border-radius: 0px 0px 0 0;
+    padding: 5px
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     font-size:2rem;
-    color:#333;
-    font-weight: bold;
+    /*background-color: red;*/
+    /*font-weight: bold;*/
+    padding: 20px;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .card-image img {
@@ -348,39 +354,49 @@ button:hover{
     object-position:  center;
 }
 
-.stars i{
+.card-content h3 i{
     color:var(--orange);
 }
 
 .card-content h3{
-    margin-top: 10px;
-    color: green;
+    /*text-align: center;*/
+    margin-top: 0px;
     text-transform: none;
-    font-size: 30px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    /*background-color: #c96b31;*/
 }
 .card-content p{
-    
     color: #666;
     text-transform: none;
-    font-size: 16px;
+    font-size: 17px;
     padding: 5px;
-}
+    /*background-color: yellow;*/
+
+}.card-content .stars{
+    margin-top: -20px;
+    /*background-color: green;*/
+} 
+.card-content .stars i{
+    font-size: 20px;
+    color: var(--orange);
+} 
 
 .card-content .price{
-    color: red;
+    color: #000000;
     font-size: 25px;
 }
 
 .card-content .price span{
     color:#666;
-    font-size: 1.5rem;
     text-decoration: line-through;
     font-size: 20px;
 } 
 
-
 .button {
     display: inline-block;
+    width: fit-content;
     margin-top: 20px;
     background: var(--orange);
     font-size: 16px;
@@ -392,7 +408,7 @@ button:hover{
     transition: all 0.3s ease;
     border-radius: 7px;
     margin-bottom: 10px;
-    
+    text-decoration: none; 
 }
 
 .button:hover {
