@@ -160,6 +160,14 @@ object-fit: cover;
     background-color: rgb(255, 213, 154);
 }
 
+.titDay:hover{
+    background-color: rgba(255, 229, 150, 0.96);
+}
+
+span:hover{
+    color:#c96b31
+}
+
 .contDay {
     position: relative;
     /*border: 1px solid black;*/
@@ -286,7 +294,7 @@ button:hover{
     margin: 20px 0 20px 0;
     flex-wrap: wrap;
     gap:2rem;
-    *flex-direction: row; /* Đổi từ column sang row */
+    flex-direction: row; /* Đổi từ column sang row */
     justify-content: space-between; /* Thêm thuộc tính justify-content để canh giữa */
 }
 
