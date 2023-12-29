@@ -289,7 +289,7 @@ button:hover{
     margin: 20px 0 20px 0;
     flex-wrap: wrap;
     gap:2rem;
-    *flex-direction: row; /* Đổi từ column sang row */
+    flex-direction: row; /* Đổi từ column sang row */
     justify-content: space-between; /* Thêm thuộc tính justify-content để canh giữa */
 }
 
