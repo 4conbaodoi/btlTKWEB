@@ -440,3 +440,94 @@ button:hover{
     }
 }
 
+
+/* footer */
+footer {
+    background-color: #4d4b4b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* Custom styles */
+  .col-content h5 {
+    color: #ffc107;
+    font-size: 1.8rem;
+    font-size: medium;
+  }
+  
+  .col-content p,
+  a {
+    color: #ccc;
+    font-size: 1.4rem;
+    font-size: medium;
+  }
+  
+  .col-content a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: medium;
+  }
+  
+  .col-content a:hover {
+    color: #ffc107;
+  }
+  
+  .copyright {
+    color: gray;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /*nav*/
+  .nav-title {
+    font-size: 20px !important;
+    font-weight: bold;
+    font-family: "Baloo Chettan", cursive;
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+  .nav-title:hover {
+    color: aliceblue;
+  }
+  .nav-title--f {
+    color: #ffa500;
+  }
+  
+  @media screen and (max-width: 700px) {
+    #navBar {
+      background-color: #595a5b !important;
+    }
+    .nav-title {
+      margin-left: 3px;
+    }
+    .sub {
+      display: none !important;
+    }
+    .packages .container .row .col-sm {
+      margin-right: 0;
+    }
+    .mb-row {
+      flex-direction: column;
+      gap: 45px;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+    .mb-card {
+      margin: auto;
+    }
+  }
