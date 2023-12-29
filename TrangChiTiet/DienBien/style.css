@@ -189,6 +189,7 @@ object-fit: cover;
 
 .contact-form p{
     font-size: x-small;
+    color: rgb(226, 128, 36);
 }
 
 .sidebar {
@@ -217,6 +218,7 @@ button {
     border-color: #f2a12f;
     color: #c96b31;
     box-shadow: #4a4334;
+    border-radius: 5px;
 }
 
 button:hover{
