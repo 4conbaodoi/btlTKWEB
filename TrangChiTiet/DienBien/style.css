@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --orange:#ffa500;
+  }
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 30px;
+    /*background-color: red;*/
 }
 .breadcrumb{
     background: #f2f5f8;
@@ -54,6 +59,7 @@
 .tourTitle{
     margin-bottom: 20px;
 }
+
 #vnt-main {
     position: relative;
 }
@@ -87,6 +93,7 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -196,10 +203,11 @@ object-fit: cover;
     position: fixed;
     top: 10px;
     right: 0px;
-    width: 400px;
+    width: 401px;
     background-color: rgb(255, 253, 250);
     padding: 10px;
-    margin-bottom: 100px;
+    margin-left: -10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(6, 6, 6, 0.215);
     position: -webkit-sticky;
@@ -247,3 +255,177 @@ button:hover{
     font-weight: bold;
     margin-top: 50px;
 }
+
+/*Tour lien quan*/
+.heading-news{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+.heading-news span{
+    font-size: 2.0rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+.heading-news span.space{
+    background:none;
+  }
+  
+.slide-container {
+    position: relative;
+    /*max-width: 1120px;*/
+    width: 100%;
+    /*background-color: grey;*/
+    padding: 20px 40px;
+    display: flex;
+    margin: 20px 0 20px 0;
+    flex-wrap: wrap;
+    gap:2rem;
+    *flex-direction: row; /* Đổi từ column sang row */
+    justify-content: space-between; /* Thêm thuộc tính justify-content để canh giữa */
+}
+
+.slide-content {
+    margin: 0 40px 0px 40px;
+    flex-grow: 1;
+   padding-bottom: 20px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #efefef;
+    border-color: var(--orange);
+    border-width: 2px;
+}
+
+.image-content {
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    object-fit: cover; /* Để ảnh trong cột dạng cover và fit với cột*/
+    filter: drop-shadow(0 0 2px rgb(72, 62, 62));
+    padding: 1px;
+
+}
+
+.card-image {
+    overflow: hidden;
+    height: 200px;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:2rem;
+    color:#333;
+    font-weight: bold;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:  center;
+}
+
+.stars i{
+    color:var(--orange);
+  }
+
+.card-content h3{
+    margin-top: 10px;
+    color: green;
+    text-transform: none;
+    font-size: 30px;
+}
+.card-content p{
+    
+    color: #666;
+    text-transform: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.card-content .price{
+    color: red;
+    font-size: 25px;
+}
+
+.card-content .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-size: 20px;
+} 
+
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--orange);
+    font-size: 16px;
+    /*font-family:Georgia, 'Times New Roman', Times, serif;*/
+    color:#fff;
+    padding: 8px 16px;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    
+}
+
+.button:hover {
+    background-color: var(--orange);
+}
+
+.swiper-navBtn {
+    color: var(--orange);
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: var(--orange);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination.bullet {
+    background-color: var(--orange);
+    opacity: 1;
+}
+
+.swiper-pagination.bullet-active {
+    background-color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+    
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
