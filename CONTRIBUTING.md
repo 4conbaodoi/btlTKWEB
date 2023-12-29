@@ -10,6 +10,6 @@ Huyền:
 - Trang chủ:  Ưu đãi đặc biệt, cảm hứng du lịch
 - Trang chi tiết: Breadcrumb, main content, Tour liên quan, hỗ trợ slider + Điện Biên, Lai Châu 
 
-  Thanh:
-  - Trang chủ: Vì sao chọn LeNu, hỗ trợ module Cảm hứng du lịch
-  - Trang danh mục: Danh mục chi tiết (DM2) + hỗ trợ DM1
+Thanh:
+- Trang chủ: Vì sao chọn LeNu, hỗ trợ module Cảm hứng du lịch
+- Trang danh mục: Danh mục chi tiết (DM2) + hỗ trợ DM1
