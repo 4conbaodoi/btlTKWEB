@@ -163,6 +163,14 @@ object-fit: cover;
     background-color: rgb(255, 213, 154);
 }
 
+.titDay:hover{
+    background-color: rgba(255, 229, 150, 0.96);
+}
+
+span:hover{
+    color:#c96b31
+}
+
 .contDay {
     position: relative;
     /*border: 1px solid black;*/
