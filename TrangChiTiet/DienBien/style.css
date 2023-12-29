@@ -5,6 +5,179 @@
     --orange:#ffa500;
   }
 
+/*header*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333; /* Màu xám đậm cho dòng 1 */
+    color: white;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.row-1 {
+    display: flex;
+    align-items: center; /* Canh giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Canh giữa các phần tử theo chiều ngang */
+    background-color: #363535; /* Màu nền của dòng 1 */
+    padding: 10px; /* Khoảng cách giữa logo và các phần tử khác */
+    margin-bottom: -40px;
+}
+
+.row-2{
+    background-color: #ffffff;
+    color:#c96b31;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.language-switch img {
+    height: 30px; /* Điều chỉnh kích thước của icon ngôn ngữ */
+}
+
+.social-apps img {
+    height: 30px; /* Điều chỉnh kích thước của icon ứng dụng */
+    cursor: pointer;
+}
+
+
+#social-link:hover .social-icons {
+    display: block;
+}
+
+.social-icons img {
+    margin-right: 10px;
+    height: 30px; /* Điều chỉnh kích thước của icon liên kết xã hội */
+}
+
+#social-icons {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+/* Hiển thị khi có lớp show và thêm hiệu ứng */
+#social-icons.show {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.login-button button {
+    background-color: #383838; /* Màu vàng cho nút đăng nhập */
+    border: none;
+    color: #ffffff;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.nav-icons div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.dropdown-content{
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 130px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+.tour-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1;
+}
+
+.icon-tour:hover .tour-dropdown-content {
+    display: block;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.row-2 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.row-2 .icon-tour:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*------------------------------------------------------------------*/
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;

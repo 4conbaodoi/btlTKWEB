@@ -143,3 +143,15 @@ var swiper = new Swiper(".slide-content", {
     },
 });
     
+//header
+function toggleSocialIcons() {
+    var socialIcons = document.getElementById("social-icons");
+    socialIcons.classList.toggle("show");
+}
+
+// Xóa lớp show khi di chuột ra khỏi Liên kết xã hội
+document.getElementById("social-apps").addEventListener("mouseout", function () {
+    var socialIcons = document.getElementById("social-icons");
+    socialIcons.classList.remove("show");
+});
+

@@ -17,8 +17,72 @@
       />
         <!-- Thêm thư viện jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEX/ByfAimAHaTKtk9E1Wrmf5VBYF8Eni+5F0" crossorigin="anonymous"></script>
+
+        <link rel="icon" href="./image/favicon.ico" />
+        <script src="script.js"></script>
     </head>
 <body>
+
+    <div class="header">
+        <div class="row-1">
+            <span class="">
+                <img src="picture/logo.png" alt="logo" height="180" width="200" style="margin-top: -50px;" />
+              </span>
+            <div class="search-box">
+                <input type="text" placeholder="Bạn muốn đi đâu"><span class="search-icon">🔍</span>
+            </div>
+            <div class="language-switch">
+                <img src="picture/Flag_of_Vietnam.jpg" alt="Vietnam Flag">
+            </div>
+            <div class="social-apps" id="social-apps">
+                <span class="app-icon">📱</span>
+                <o onclick="toggleSocialIcons()">Liên kết xã hội</o>
+                <div class="social-icons" id="social-icons">
+                    <div class="social-icons-grid">
+                        <a href="#" target="_blank"><img src="picture/Facebook.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="picture/Instagramlogo.png" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="picture/tiktoklogo.png" alt="TikTok"></a>
+                    </div>
+                    <div class="social-icons-grid">
+                        <a href="#" target="_blank"><img src="picture/zalologo.png" alt="Zalo"></a>
+                        <a href="#" target="_blank"><img src="picture/github.png" alt="github"></a>
+                        <a href="#" target="_blank"><img src="picture/Gmaillogo.png" alt="mail"></a>
+                    </div>
+                    <!-- Thêm các icon khác nếu cần -->
+                </div>
+            </div>
+            <div class="login-button">
+                <button onclick="redirectToLogin()">Đăng nhập</button>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="nav-icons">
+                <div class="icon-home">
+                    <span class="home-icon">🏠 Trang chủ |</span>
+                </div>
+                <div class="icon-introduction">
+                    <span class="introduction-icon">📖 Giới thiệu |</span>
+                </div>
+                <div class="icon-contact">
+                    <span class="contact-icon">📞 Liên hệ |</span>
+                </div>
+                <div class="icon-tour dropdown">
+                    <span class="tour-icon">🚗 Tour</span>
+                    <div class="dropdown-content">
+                        <a href="#">Điện Biên</a>
+                        <a href="#">Sơn La</a>
+                        <a href="#">Lai Châu</a>
+                        <a href="#">Leo núi</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+<!--end header-->
+
+
 
     <div id="vnt-content">
         <div class="vnt-main-top">
