@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wg ht@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 :root{
     --orange:#ffa500;
   }
+
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 30px;
     /*background-color: red;*/
 }
+
 .breadcrumb{
     background: #f2f5f8;
     padding-left: 150px;
@@ -160,6 +163,14 @@ object-fit: cover;
     background-color: rgb(255, 213, 154);
 }
 
+.titDay:hover{
+    background-color: rgba(255, 229, 150, 0.96);
+}
+
+span:hover{
+    color:#c96b31
+}
+
 .contDay {
     position: relative;
     /*border: 1px solid black;*/
@@ -286,14 +297,14 @@ button:hover{
     margin: 20px 0 20px 0;
     flex-wrap: wrap;
     gap:2rem;
-    *flex-direction: row; /* Đổi từ column sang row */
+    flex-direction: row; /* Đổi từ column sang row */
     justify-content: space-between; /* Thêm thuộc tính justify-content để canh giữa */
 }
 
 .slide-content {
     margin: 0 40px 0px 40px;
     flex-grow: 1;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .card {
@@ -311,14 +322,14 @@ button:hover{
     width:100%;
     object-fit: cover; /* Để ảnh trong cột dạng cover và fit với cột*/
     filter: drop-shadow(0 0 2px rgb(72, 62, 62));
-    padding: 1px;
+    padding: 0px;
 
 }
 
 .card-image {
     overflow: hidden;
     height: 200px;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 15px 15px 0 0;
 }
 
 .card-content {
@@ -339,7 +350,7 @@ button:hover{
 
 .stars i{
     color:var(--orange);
-  }
+}
 
 .card-content h3{
     margin-top: 10px;
