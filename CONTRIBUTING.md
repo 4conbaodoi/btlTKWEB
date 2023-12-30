@@ -12,4 +12,4 @@ Huyền:
 
 Thanh:
 - Trang chủ: Vì sao chọn LeNu, hỗ trợ module Cảm hứng du lịch
-- Trang danh mục: Danh mục chi tiết (DM2) + hỗ trợ DM1
+- Trang danh mục: Danh mục chi tiết (DM2) + DM1

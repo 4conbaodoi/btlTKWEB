@@ -146,12 +146,7 @@ var swiper = new Swiper(".slide-content", {
 //header
 function toggleSocialIcons() {
     var socialIcons = document.getElementById("social-icons");
-    socialIcons.classList.toggle("show");
+    socialIcons.style.display = (socialIcons.style.display === 'none') ? 'block' : 'none';
 }
 
-// Xóa lớp show khi di chuột ra khỏi Liên kết xã hội
-document.getElementById("social-apps").addEventListener("mouseout", function () {
-    var socialIcons = document.getElementById("social-icons");
-    socialIcons.classList.remove("show");
-});
 
