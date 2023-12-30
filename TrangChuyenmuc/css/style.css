@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 2rem 200px;
 }
 /*banner*/
 .banner {

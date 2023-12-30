@@ -26,6 +26,7 @@ html{
 }
 #container {
   margin-top: 113px;
+  position: relative;
 }
 section{
   padding:2rem 9%;
@@ -192,7 +193,28 @@ body {
   padding: 10px;
   cursor: pointer;
 }
---------------------------------------------------------------------
+.banner-left {
+  position: fixed;
+}
+.banner-left-img {
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  width: 180px;
+  height: 550px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.banner-right-img {
+  position: fixed;
+  top: 123px;
+  right: 3px;
+  width: 180px;
+  height: 550px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 
 
 /* media queries  */
