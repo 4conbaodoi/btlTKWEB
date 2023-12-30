@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tour Hà Nội - Điện Biên 3 ngày 2 đêm mùa hoa ban trắng</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+        <!-- Thêm thư viện jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEX/ByfAimAHaTKtk9E1Wrmf5VBYF8Eni+5F0" crossorigin="anonymous"></script>
+
+        <link rel="icon" href="./image/favicon.ico" />
+        <script src="script.js"></script>
+    </head>
+<body>
+
+    <div class="header">
+        <div class="row-1">
+            
+                <a href="https://4conbaodoi.github.io/btlTKWEB/TrangChu/index.html"><img class="logo" src="picture/logo.png" alt="logo"/></a>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Bạn muốn đi đâu"><span class="search-icon">🔍</span>
+            </div>
+             
+            <div class="social-apps" id="social-apps">
+                <span class="app-icon">📱</span>
+                <o onclick="toggleSocialIcons()">Liên kết</o>
+                <div class="social-icons" id="social-icons">
+                    <div class="social-icons-grid">
+                        <a href="#" target="_blank"><img src="picture/Facebook.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="picture/Instagramlogo.png" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="picture/tiktoklogo.png" alt="TikTok"></a>
+                    </div>
+                    <div class="social-icons-grid">
+                        <a href="#" target="_blank"><img src="picture/zalologo.png" alt="Zalo"></a>
+                        <a href="#" target="_blank"><img src="picture/github.png" alt="github"></a>
+                        <a href="#" target="_blank"><img src="picture/Gmaillogo.png" alt="mail"></a>
+                    </div>
+                    <!-- Thêm các icon khác nếu cần -->
+                </div>
+            </div>
+            <div class="login-button">
+                <button onclick="redirectToLogin()">Đăng nhập</button>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="nav-icons">
+                <div class="icon-home">
+                    <i class="fa-solid fa-house"></i>
+                    <span style="margin-left: 5px;"> Trang chủ</span>
+                </div>
+                <div class="icon-introduction">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <span style="margin-left: 5px;"> Giới thiệu</span>
+                </div>
+                <div class="icon-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <span style="margin-left: 5px;"> Liên hệ</span>
+                </div>
+                <div class="icon-tour dropdown">
+                    <i class="fa-solid fa-list"></i>
+                    <span style="margin-left: 5px;"> Tour</span>
+                    <div class="dropdown-content">
+                        <a href="#">Điện Biên</a>
+                        <a href="#">Sơn La</a>
+                        <a href="#">Lai Châu</a>
+                        <a href="#">Leo núi</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+<!--end header-->
+
+
+
+    <div id="vnt-content">
+        <div class="vnt-main-top">
+            <div id="vnt-navation" class="breadcrumb">
+                <div class="wrapper">
+                    <div class="navation">
+                        <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <!-- Bước 1: Trang chủ -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" title="Trang chủ" href="../../TrangChu/trangchu.html">
+                                    <span itemprop="name">Trang chủ</span>
+                                </a>
+                                <meta itemprop="position" content="1"> 
+                            </li>                   
+                            <!-- Bước 2: Điện Biên -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="../../TrangChuyenmuc/ChuyenMucChiTiet.html">
+                                    <span itemprop="name">Điện Biên </span>
+                                </a>
+                                <meta itemprop="position" content="2"> 
+                            </li>                   
+                            <!-- Bước 3: Mùa hoa cải trắng 3N2D -->
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="DB1.html">
+                                    <span itemprop="name">Mùa hoa cải trắng 3N2D</span>
+                                </a>
+                                <meta itemprop="position" content="3"> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapCont">
+            <div class="wrapper">
+                <div class="tourTitle">
+                    <h2>Du lịch Điện Biên mùa hoa cải quá 2023</h2>
+                </div>
+                <div class="mod-content row"> <!--:before-->
+                    <div id="vnt-main" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div id="vnt-slider" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Thêm các slide -->
+                                <div class="swiper-slide"><img src="../../TrangChuyenmuc/picture/1.jpg" alt="Slide 1"></div>
+                                <div class="swiper-slide"><img src="../../TrangChuyenmuc/picture/2.jpg" alt="Slide 2"></div>
+                                <div class="swiper-slide"><img src="../../TrangChuyenmuc/picture/3.jpg" alt="Slide 3"></div>
+                                <div class="swiper-slide"><img src="../../TrangChuyenmuc/picture/4.jpg" alt="Slide 4"></div>
+                                <!-- ... (Thêm nhiều slide khác) ... -->
+                            </div>
+                            <!-- Thêm nút điều hướng (optional) -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div id="thumbnail-container"></div>
+
+                        <!--Điểm nhấn hành trình-->
+                        <div class="boxTour" id="flag1">
+                            <div class="title">
+                                <i class="fa-solid fa-circle-info" style="font-size: 25px;"></i>
+                                <span style="font-size: 25px; font-weight: bold;">Điểm nhấn hành trình</span>
+                            </div>
+                            <div class="separator-line"></div>
+
+                            <div class="content">
+                                <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 20%;"> 
+                                                <span style="color: #555555;">
+                                                    <strong>Hành trình</strong>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span style="color: #555555;">
+                                                    <strong>Tây Bắc: Hà Nội - Mộc Châu - Cầu Kính Bạch Long - Mùa hoa cải trắng</strong>
+                                                </span> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20%;"> 
+                                                <span style="color: #555555;">
+                                                    <strong>Lịch trình</strong>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span style="color: #555555;">
+                                                    <strong>3 ngày 2 đêm</strong>
+                                                </span> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20%;"> 
+                                                <span style="color: #555555;">
+                                                    <strong>Khởi hành</strong>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span style="color: #555555;">
+                                                    <strong>04,11,18,25/11; 02,09,26,23/12; 13,20,27/01/2024</strong>
+                                                </span> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20%;"> 
+                                                <span style="color: #555555;">
+                                                    <strong>Di chuyển</strong>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span style="color: #555555;">
+                                                    <strong>Xe du lịch đời mới & Máy Bay khứ hồi</strong>
+                                                </span> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="text-align: justify;">
+                                    <em>
+                                        <strong>
+                                            Du lịch Tây Bắc mùa Hoa Cải Trắng - Hà Nội - Mộc Châu - Điện Biên từ Sài Gòn 2024.
+                                        </strong>
+                        
+                                    Mộc Châu đẹp nhất khi bước khoảng thời gian mùa hoa cải, đây cũng là thời điểm dân phượt nô nức kéo nhau lên Mộc Châu để chụp ảnh, ngắm hoa. 
+                                    Hoa cải ở Mộc Châu khi nở nó phủ trắng các thung lũng, các quả đồi, những sườn núi. 
+                                    Đi từ quốc lộ 6, Mộc Châu dần hiện ra trước mắt bạn như một thiên đường thực sự nằm giữa lưng chừng mây.
+                                    Theo đó, vào những tháng cuối năm những cánh đồng hoa cải trắng Mộc Châu bắt đầu nở rộ thu hút rất đông khách thập phương. 
+                                    Lúc này, thời tiết cũng bắt đầu có sự rét nhẹ, kèm theo sương mù báo hiệu mùa hoa cải Mộc Châu đã đến và làm cho cảnh sắc nơi đây càng thơ mộng hơn bao giờ hết. 
+                                    Hãy cùng Du Lịch Việt chúng tôi điểm qua vài nơi lý tưởng để có những thước phim và hình ảnh đẹp trong chuyến tour du lịch Mộc Châu mùa Hoa Cải Trắng này nhé! 
+                                    Tại <strong>Thị trấn nông trường Mộc Châu</strong> có rất nhiều cánh đồng hoa cải trắng. 
+                                    Mỗi thửa ruộng cách nhau không xa và thường rộng đến cả ngàn mét vuông nên bạn có thể tha hồ ngắm cảnh và chụp ảnh. 
+                                    Hay <strong>Thung lũng Nà Ka</strong> vốn nổi tiếng với những vườn mơ, mận bạt ngàn. 
+                                    Vào mùa này, ngay dưới những gốc cây sần sùi, trơ trụi là những vườn cảnh trắng tinh khôi, tạo lên khung cảnh cực thơ mộng.
+                                    </em>
+                                </p>
+                                <div class="linkMore text-right"></div>
+                            </div>
+                        </div>
+
+                        <!--Lịch trình-->
+                        <div class="boxTour" id="flag2">
+                            <div class="title">
+                                <i class="fa-solid fa-calendar-days" style="font-size: 25px;" ></i>
+                                <span style="font-size: 25px; font-weight: bold;">Lịch trình</span>
+                            </div>
+                            <div class="separator-line"></div>
+                            <div class="content">
+                                <div class="listDay">
+                                    <div class="day">
+                                        
+                                        <div class="titDay"> <span>Ngày 1 |</span> TP.HCM - HÀ NỘI - HÒA BÌNH - MỘC CHÂU (Ăn trưa, chiều)</div>
+                                        <div class="arrow-up" style="display: none;"></div>
+                                        <div class="contDay" style="display: none;">
+                                            <div class="the-content desc">
+                                                <p></p>
+                                                <div style="text-align: justify;">
+                                                    <strong>Sáng: </strong>
+                                                    Quý khách có mặt tại ga quốc nội, sân bay Tân Sơn Nhất trước giờ bay ít nhất hai tiếng. 
+                                                    Đại diện công ty Du Lịch Việt đón và hỗ trợ Quý khách làm thủ tục đón chuyến bay đi Hà Nội.
+                                                    <ul>
+                                                        <li>Đến sân bay Nội Bài, xe đón Đoàn khởi hành đến Mai Châu.</li>
+                                                        <li>Trên đường đến Hòa Bình, Quý khách dừng chân tham quan Nhà máy thủy điện sông Đà (còn gọi là thủy điện Hòa Bình)</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div style="text-align: center;">
+                                                    <img alt src="../../TrangChu/image/1.jpg" style="width: 700px; height: 389px;">
+                                                    
+                                                    <em>Nhà máy thủy điện sông Đà</em>
+                                                    <br>
+                                                </div>
+                                             
+                                                <div style="text-align: justify;">
+                                                    <strong>Trưa: </strong>
+                                                    Dùng cơm trưa.
+                                                    <ul>
+                                                        <li>Chiêm ngưỡng toàn cảnh tuyệt đẹp của thung lũng Mai Châu trên đoạn đường đèo Thung Khe.</li>
+                                                        <li>Rời Mai Châu, Đoàn khởi hành đến Cao Nguyên Mộc Châu. 
+                                                            Đoàn ngắm nhìn những đồi chè xanh mướt trải dài đến tận bên kia quả đồi</li>
+                                                    </ul>
+                                                </div>
+                                                <ul></ul>
+                                                <div style="text-align: justify;">
+                                                    <strong>Tối: </strong>
+                                                    Dùng cơm chiều, nghỉ đêm Mộc Châu.
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="day">
+                                        
+                                        <div class="titDay"> <span>Ngày 2 |</span> MỘC CHÂU - CẦU KÍNH BẠCH LONG – ĐIỆN BIÊN (Ăn sáng, trưa, chiều)</div>
+                                        <div class="arrow-up" style="display: none;"></div>
+                                        <div class="contDay" style="display: none;">
+                                            <div class="the-content desc">
+                                                <p></p>
+                                                <div style="text-align: justify;">
+                                                    <strong>Sáng: </strong> Dùng bữa sáng.
+                                                    <ul>
+                                                        <li>Đoàn khởi hành tham quan Cầu Kính Bạch Long, cầu kính mới nhất của Việt Nam. 
+                                                            Cây cầu nằm trong quần thể du lịch Mộc Châu Island – Tổ hợp giải trí và nghỉ dưỡng hàng đầu khu vực vùng núi Tây Bắc. 
+                                                            Cầu kính Bạch Long có tổng chiều dài 632m. (Chi phí tự túc)</li>
+                                                            <li>Đoàn tiếp tục khởi hành đi Sơn La.</li>
+                                                    </ul>
+                                                </div>
+                    
+                                                <div style="text-align: center;">
+                                                    <img alt src="../../TrangChu/image/1.jpg" style="width: 700px; height: 389px;">
+                                                    <em>Nhà máy thủy điện sông Đà</em>
+                                                    
+                                                </div>
+                                             
+                                                <div style="text-align: justify;">
+                                                    <strong>Trưa: </strong>
+                                                    Dùng cơm trưa.
+                                                    <ul>
+                                                        <li>Tiếp tục hành trình tới Điện Biên, đoàn dừng chân tại Đèo Pha Đin chụp hình, ngắm các bản làng vùng cao từ trên đèo.</li>
+                                                    </ul>
+                                                </div>
+                                                <div style="text-align: center;">
+                                                    <img alt src="../../TrangChu/image/1.jpg" style="width: 700px; height: 389px;">
+                                                    <em>Nhà máy thủy điện sông Đà</em>
+                                                    
+                                                </div>
+                                                <div style="text-align: justify;">
+                                                    <strong>Tối: </strong>
+                                                    Dùng cơm chiều, nghỉ đêm tại Điện Biên.
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="day">
+                                        
+                                        <div class="titDay"> <span>Ngày 3 |</span> ĐIỆN BIÊN - SAPA – FANSIPAN - BẢN CÁT CÁT - HÀ NỘI (Ăn sáng, trưa, chiều)</div>
+                                        <div class="arrow-up" style="display: none;"></div>
+                                        <div class="contDay" style="display: none;">
+                                            <div class="the-content desc">
+                                                <div style="text-align: justify;">
+                                                    <strong>Sáng: </strong> Dùng bữa sáng.
+                                                    <ul>
+                                                        <li>Đoàn tham quan Điện Biên Phủ oai hùng, vang danh lịch sử với: đồi A1, tượng đài chiến thắng Điện Biên Phủ, nghĩa trang liệt sĩ Điện Biên, hầm chỉ huy quân đội Pháp-tướng Đờ Cát (De Castries).</li>
+                                                    </ul>
+                                                </div>
+                    
+                                                <div style="text-align: center;">
+                                                    <img alt src="../../TrangChu/image/1.jpg" style="width: 700px; height: 389px;">
+                                                    <em>Nhà máy thủy điện sông Đà</em>
+                                                    <br>
+                                                </div>
+                                             
+                                                <div style="text-align: justify;">
+                                                    <strong>Trưa: </strong>
+                                                    Dùng cơm trưa.
+                                                    <ul>
+                                                        <li>Đoàn khởi hành đi Sapa, trên đường đi qua Phong Thổ</li>
+                                                        <li>Đoàn vượt đèo Ô Quy Hồ (đèo Hoàng Liên Sơn) một trong những đèo quanh co, hiểm trở, hùng vĩ bậc nhất miền núi phía Bắc.</li>
+                                                        <li>Đoàn khởi hành tham quan chinh phục Fansipan, ngọn núi cao nhất Việt Nam (3.143 m) thuộc dãy núi Hoàng Liên Sơn, cách thị trấn Sa Pa khoảng 9 km về phía tây nam.</li>
+                                                    </ul>
+                                                </div>
+                                                <div style="text-align: justify;">
+                                                    <strong>Tối: </strong>
+                                                    <ul>
+                                                        <li>Dùng cơm chiều.</li>
+                                                        <li>Thăm bản Cát Cát, tìm hiểu nghề dệt nhuộm của dân tộc H’Mông và trạm thủy điện Cát Cát thời Pháp – nơi có 3 dòng nước hợp nhau thành dòng suối Mường Hoa.</li>
+                                                        <li>Đoàn khởi hành về Hà Nội Xe tiễn đoàn ra sân bay Nội Bài. Đáp máy bay về TP.HCM. Kết thúc chuyến tham quan, chia tay đoàn và hẹn gặp lại.</li>
+                                                    </ul>
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--Dịch vụ bao gồm-->
+                        <div class="boxTour" id="flag3">
+                            <div class="title service-more" style=" cursor: pointer;">
+                                <i class="fa-solid fa-clipboard" style="font-size: 25px;"></i>
+                                <span style="font-size: 25px; font-weight: bold;" >Dịch vụ đi kèm</span>
+                                <span style="font-size: 17px; padding-left: 0;">(Xem thêm)</span>
+                            </div>
+                            <div class="separator-line"></div>
+                            
+                            <div class="content service-more-content" style="display: none;">
+                                <div class="flag-box">
+                                <div class="the-content desc">
+                                    <p>
+                                        <em>Giờ bay có thể thay đổi theo quy định của hàng không. Du Lịch Việt sẽ thay đổi chương trình cho phù hợp với giờ bay mới nhưng sẽ không chịu trách nhiệm về các khoản chi phí phát sinh.
+                                            (Đoàn tối thiểu 10 khách khởi hành)</em>
+                                        <br>
+                                        <br>
+                                        <strong>Giá tour bao gồm:</strong>
+                                    </p>
+                                    <ul>
+                                        <li>Vé máy bay khứ hồi TP.HCM – HÀ NỘI – TP.HCM (Vietjet Air).</li>
+                                        <li>Xe tham quan (xe 16 chỗ, 29 chỗ, 35 chỗ, 45 chỗ) tùy theo số lượng khách thực tế trên chuyến đi</li>
+                                        <li>Nghỉ đêm tại Mộc Châu, Sapa, Điện Biên: khách sạn tiêu chuẩn tương đương 3 sao. </li>
+                                        <li>Ăn uống theo chương trình</li>
+                                        <li>Vé tham quan theo chương trình.</li>
+                                        <li>Quà tặng: nón du lịch Việt, nước, khăn lạnh.</li>
+                                    </ul>
+                                    <p>
+                                        <strong>Không bao gồm:</strong>
+                                    </p>
+                                    <ul>
+                                        <li>Bia hay nước ngọt trong các bữa ăn.</li>
+                                        <li>Chi phí cá nhân: điện thoại, giặt ủi…</li>
+                                        <li>Cáp treo Fansipan, Cầu Kính Bạch Long..</li>
+                                        <li>Thuế VAT.</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Ghi chú-->
+                        <div class="boxTour" id="flag4">
+                            <div class="title note-more" style="cursor: pointer;">
+                                <i class="fa-solid fa-paperclip" style="font-size: 25px;"></i>
+                                <span style="font-size: 25px; font-weight: bold;">Ghi chú</span>
+                                <span style="font-size: 17px; padding-left: 0;">(Xem thêm)</span>
+                            </div>
+                            <div class="separator-line"></div>
+                            <div class="content note-more-content" style="display: none;">
+                                <div class="flag-box">
+                                <div class="the-content desc">
+                                    <p style="text-align: justify;">
+                                        <strong style="font-size: 1rem;">Giá vé dành cho trẻ em</strong>
+                                    </p>
+                                    <ul>
+                                        <li>Trẻ em dưới 02 tuổi: miễn phí giá tour, giá vé máy bay theo quy định hãng hàng không. Cha, Mẹ hoặc người thân đi kèm tự lo các chi phí ăn, ngủ, tham quan (nếu có) cho bé.</li>
+                                        <li>Trẻ em từ 02 – dưới 05 tuổi: 100% giá vé máy bay; miễn giá tour. Cha, Mẹ hoặc người thân đi kèm tự lo các chi phí ăn, ngủ, tham quan (nếu có) cho bé. Hai người lớn chỉ kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 trở lên phải mua ½ vé tour.</li>
+                                        <li>Trẻ em từ 05 – dưới 11 tuổi: 100% giá vé máy bay; 50% giá tour. Bao gồm các dịch vụ ăn uống, ghế ngồi trên xe và ngủ chung với gia đình. Hai người lớn chỉ được kèm 1 trẻ em từ 5 đến dưới 11 tuổi, em thứ 2 trở lên Cha Mẹ mua thêm 1 suất giường đơn.</li>
+                                        <li>Từ 11 tuổi trở lên: 100% giá tour và tiêu chuẩn như người lớn.</li>
+                                    </ul>
+                                    <p style="text-align: justify;">
+                                        <strong>Quy định thanh toán và hủy vé</strong>
+                                    </p>
+                                    <ul>
+                                        <li>Sau khi đăng ký, thanh toán ít nhất 50% tiền cọc và đóng hết 100% trước  khởi hành 10 ngày.</li>
+                                        <li>Khi đến ngày thanh toán đủ 100% tổng giá trị tiền tour, nếu Quý khách không thanh toán đúng hạn và đúng số tiền được xem như Quý khách tự ý huỷ tour và mất hết số tiền đã đặt cọc giữ chỗ.</li>
+                                        <li>Vé Máy Bay / vé xe lửa / vé tàu cao tốc được xuất ngay sau khi quý khách đăng ký, thanh toán, xác nhận thông tin cá nhân (họ tên, ngày tháng năm sinh…) và có những điều kiện vé như sau: Không được đổi tên, hoàn vé, hủy vé, thay đổi ngày, thay đổi hành trình.</li>
+                                        <li>Trong những trường hợp bất khả kháng như: khủng bố, bạo động, thiên tai, lũ lụt… 
+                                            Tuỳ theo tình hình thực tế và sự thuận tiện, an toàn của khách hàng, công ty Du Lịch sẽ chủ động thông báo cho khách hàng sự thay đổi như sau: huỷ hoặc thay thế bằng một chương trình mới với chi phí tương đương chương trình tham quan trước đó. 
+                                            Trong trường hợp chương trình mới có phát sinh thì Khách hàng sẽ thanh toán khoản phát sinh này. Tuy nhiên, mỗi bên có trách nhiệm cố gắng tối đa, giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây ra vì lý do bất khả kháng.…</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="flagEnd"></div>
+                    </div>
+
+                     <!-- Thông báo thành công -->
+                    
+                    <div id="vnt-sidebar" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                         <!-- Sidebar -->
+                         <div class="sidebar">
+                            <!-- Thông tin tour -->
+                            <div class="tour-info">
+                                <h3>Thông tin tour</h3>
+                                <ul>
+                                    <li><strong>Mã tour:</strong> 16986</li>
+                                    <li><strong>Thời gian:</strong> 3 ngày 2 đêm</li>
+                                    <li><strong>Điểm xuất phát:</strong> Hà Nội</li>
+                                    <li><strong>Điểm kết thúc:</strong> Điện Biên</li>
+                                    <li><strong>Vận chuyển:</strong> Xe du lịch & Máy Bay khứ hồi</li>
+                                    <li><strong>Giá tour:</strong> <span style="color: red; font-size: 20px; font-weight: bold;">3.880.000 VNĐ</span></li>
+                                </ul>
+                            </div>
+
+                            
+                            <!-- Ô điền thông tin -->
+                            <div class="contact-form">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="phone">Số Điện Thoại</label>
+                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="name">Họ và Tên</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên">
+                                    </div>
+                                    <p style="font-size: 15px; text-align: center;">Chúng tôi sẽ liên hệ để xác nhận ngay sau khi nhận được thông tin của quý khách!</p>
+                                    <!-- Nút Gửi -->
+                                    <button type="button" onclick="showSuccessMessage()">Gửi</button>
+
+                                    <!-- Thông báo thành công (ẩn ban đầu) -->
+                                    <div id="success-message" style="display: none;">Đặt tour thành công!</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxHome">
+                    <!--<div class="titleHome"> <h2>Tour liên quan</h2></div>-->
+                    <h2 class="heading-news">
+                        <span>T</span>
+                        <span>O</span>
+                        <span>U</span>
+                        <span>R</span>
+                        <span class="space"></span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>Ê</span>
+                        <span>N</span>
+                        <span class="space"></span>
+                        <span>Q</span>
+                        <span>U</span>
+                        <span>A</span>
+                        <span>N</span>
+                    </h2>
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <!-- Nội dung slide 1 -->
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="../../TrangChuyenmuc/picture/1.jpg" alt="anh1" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội - Mộc Châu </h3>
+                                        <p>
+                                            Mộc Châu được coi là xứ sở của sữa bò, cảnh đẹp mang đậm bản sắc của núi rừng Tây Bắc.
+                                        </p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="price"> 3.880.000VNĐ <span>6.440.000VNĐ</span> </div>
+                                        <a href="../../TrangChuyenmuc/ChuyenmucTour.html" class="button">Xem chi tiết</a>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card swiper-slide">
+                                    <!-- Nội dung slide 1 -->
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="../../TrangChuyenmuc/picture/2.jpg" alt="anh1" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội - Mộc Châu </h3>
+                                        <p>
+                                            Mộc Châu được coi là xứ sở của sữa bò, cảnh đẹp mang đậm bản sắc của núi rừng Tây Bắc.
+                                        </p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="price"> 3.880.000VNĐ <span>6.440.000VNĐ</span> </div>
+                                        <a href="../../TrangChuyenmuc/ChuyenmucTour.html" class="button">Xem chi tiết</a>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="card swiper-slide">
+                                    <!-- Nội dung slide 1 -->
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="../../TrangChuyenmuc/picture/3.jpg" alt="anh1" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội - Mộc Châu </h3>
+                                        <p>
+                                            Mộc Châu được coi là xứ sở của sữa bò, cảnh đẹp mang đậm bản sắc của núi rừng Tây Bắc.
+                                        </p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="price"> 3.880.000VNĐ <span>6.440.000VNĐ</span> </div>
+                                        <a href="../../TrangChuyenmuc/ChuyenmucTour.html" class="button">Xem chi tiết</a>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="card swiper-slide">
+                                    <!-- Nội dung slide 1 -->
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="../../TrangChuyenmuc/picture/4.jpg" alt="anh1" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội - Mộc Châu </h3>
+                                        <p>
+                                            Mộc Châu được coi là xứ sở của sữa bò, cảnh đẹp mang đậm bản sắc của núi rừng Tây Bắc.
+                                        </p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="price"> 3.880.000VNĐ <span>6.440.000VNĐ</span> </div>
+                                        <a href="../../TrangChuyenmuc/ChuyenmucTour.html" class="button">Xem chi tiết</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div> 
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-3 col-content d-flex flex-column align-items-center"
+            >
+              <a href="#" class="navbar-brand nav-title" style="margin: 5px 0">
+                <span class="nav-title nav-title--f">L</span>eNu <span class="nav-title nav-title--f">T</span>Ravel
+              </a>
+              <p><strong>Địa chỉ</strong> : <a href="https://maps.app.goo.gl/pBgr9uYhXFZHzHEr8" target="_blank"> Số 12 Chùa Bộc, TP.Hà Nội</a></p>
+              <p><strong>Số điện thoại</strong> : <a href="tel:01234567890"></a>+84 234567890</p>
+              <p><strong>Email</strong> : <a href="mailto:4conbao@gmail.com" type="Email">4conbao@gmail.com</a>
+                <h3 style="font-size: 15px; color: #FFF  ;">CHỨNG NHẬN</h3>
+                <a href="http://mis.hvnh.edu.vn/" target="_blank"><img src="picture/cnhvnh1.jpg" alt="logo mishvnh"></a>
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Hỗ Trợ Khách Hàng</h5>
+              <p><a href="#">Cẩm nang du lịch</a></p>
+              <p><a href="#">Hỏi đáp</a></p>
+              <h5 style="font-size: 15px; color: #FFF  ;">CHẤP NHẬN THANH TOÁN</h5>
+            <img src="picture/pay.png">
+            <h5 style="font-size: 15px; color: #FFCC33;">ỨNG DỤNG DI ĐỘNG</h5>
+            <img src="picture/app.png">
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Chính Sách</h5>
+              <p><a href="#">Điều khoản sử dụng</a></p>
+              <p><a href="#">Chính sách bảo mật</a></p>
+              <p><a href="#">Chính sách đặt tour</a></p>
+              <p><a href="#">Chính sách thanh toán</a></p>
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Giờ Hoạt Động</h5>
+              <p>Thứ 2 - Thứ 6: 8:00 AM - 6:00 PM</p>
+              <p>Thứ 7: 9:00 AM - 4:00 PM</p>
+              <p>Chủ Nhật: Nghỉ</p>
+            </div>
+          </div>
+  
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="copyright">&copy; 2023 - LeNu - Design and coded by Group 10.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!--script cho tour lien quan-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
