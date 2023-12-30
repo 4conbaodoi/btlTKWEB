@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .row-1 {
@@ -31,8 +31,9 @@ body {
     align-items: center; /* Canh giữa các phần tử theo chiều dọc */
     justify-content: space-between; /* Canh giữa các phần tử theo chiều ngang */
     background-color: #363535; /* Màu nền của dòng 1 */
-    padding: 10px; /* Khoảng cách giữa logo và các phần tử khác */
-    margin-bottom: -40px;
+    padding: 5px; /* Khoảng cách giữa logo và các phần tử khác */
+    margin-bottom: -42px;
+    height: 110px;
 }
 
 .row-2{
@@ -40,25 +41,27 @@ body {
     color:#c96b31;
 }
 
-.search-box input {
-    padding: 5px;
+.search-box{
+    margin-top: -40px;
 }
 
 .language-switch img {
     height: 30px; /* Điều chỉnh kích thước của icon ngôn ngữ */
+    margin-bottom: 40px;
 }
 
-.social-apps img {
+.social-apps{
     height: 30px; /* Điều chỉnh kích thước của icon ứng dụng */
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 
-#social-link:hover .social-icons {
+#social-link:hover{
     display: block;
 }
 
-.social-icons img {
+.social-icons{
     margin-right: 10px;
     height: 30px; /* Điều chỉnh kích thước của icon liên kết xã hội */
 }
@@ -98,11 +101,10 @@ body {
 
 
 
-.login-button button {
-    background-color: #383838; /* Màu vàng cho nút đăng nhập */
-    border: none;
+.login-button{
     color: #ffffff;
-    padding: 8px 15px;
+    padding: 8px 5px;
+    margin-bottom: 40px;
     cursor: pointer;
 }
 
@@ -636,6 +638,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    height: 400px;
   }
   
   .footer-container {
