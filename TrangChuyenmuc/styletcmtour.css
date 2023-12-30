@@ -44,6 +44,29 @@ section{
   padding:2rem 9%;
 }
 
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.intro h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-style: italic;
+  color: #ffa500;
+}
+
+.intro p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-style: italic;
+  color: #333;
+  font-weight: bolder;
+}
+
 .packages .heading{
   text-align: center;
   padding:2.5rem 0
