@@ -24,36 +24,47 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    
 }
 
 .row-1 {
     display: flex;
-    align-items: center; /* Canh giữa các phần tử theo chiều dọc */
     justify-content: space-between; /* Canh giữa các phần tử theo chiều ngang */
     background-color: #363535; /* Màu nền của dòng 1 */
-    padding: 5px; /* Khoảng cách giữa logo và các phần tử khác */
+    padding: 0px; /* Khoảng cách giữa logo và các phần tử khác */
     margin-bottom: -42px;
     height: 110px;
+    margin-left: 0px;
 }
 
-.row-2{
-    background-color: #ffffff;
-    color:#c96b31;
+.logo{
+    height: 180px;
+    width: 180px;
+    margin-top: -50px;
+    margin-left: 100px;
+    /*background-color: yellow;*/
 }
 
 .search-box{
+    position: relative;
     margin-top: -40px;
+    margin-left: -720px;
+    background-color: green;
 }
 
-.language-switch img {
-    height: 30px; /* Điều chỉnh kích thước của icon ngôn ngữ */
-    margin-bottom: 40px;
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .social-apps{
     height: 30px; /* Điều chỉnh kích thước của icon ứng dụng */
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-right: -530px;
 }
 
 
@@ -62,7 +73,7 @@ body {
 }
 
 .social-icons{
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     height: 30px; /* Điều chỉnh kích thước của icon liên kết xã hội */
 }
 
@@ -100,14 +111,22 @@ body {
 }
 
 
-
 .login-button{
     color: #ffffff;
     padding: 8px 5px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
+
+
+.row-2{
+    background-color: #ffffff;
+    color:#c96b31;
+    /*background-color: blue;*/
+    padding-left: 150px;
+}
 .nav-icons {
     display: flex;
 }
@@ -153,17 +172,6 @@ body {
     display: block;
 }
 
-.search-box {
-    position: relative;
-}
-
-.search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
 
 .row-2 .dropdown-content {
     display: none;
@@ -183,14 +191,14 @@ body {
 .wrapCont{
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 30px;
+    margin-top: 10px;
     /*background-color: red;*/
 }
 
 .breadcrumb{
     background: #f2f5f8;
     padding-left: 150px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0;
     border-bottom: solid 1px #fff;
     width: 100%;
