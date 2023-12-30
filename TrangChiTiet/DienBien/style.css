@@ -56,39 +56,13 @@ body {
     margin-bottom: 30px;
 }
 
-
-#social-link:hover{
-    display: block;
-}
-
-.social-icons{
-    margin-right: 10px;
-    height: 30px; /* Điều chỉnh kích thước của icon liên kết xã hội */
-}
-
-#social-icons {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-top: 23px;
+    margin-left: 10px;
 }
 
-
-/* Hiển thị khi có lớp show và thêm hiệu ứng */
-#social-icons.show {
-    display: block;
-    animation: fade-in 0.5s ease-in-out;
-}
 
 @keyframes fade-in {
     from {
