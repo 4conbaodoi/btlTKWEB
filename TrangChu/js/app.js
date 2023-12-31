@@ -48,7 +48,7 @@ function updateSlide() {
 }
 
 // Tự động chuyển slide mỗi 3 giây (điều chỉnh nếu cần)
-setInterval(showNextSlide, 3000);
+setInterval(showNextSlide, 4000);
 
 // alert liên kết
 var zalolink = document.getElementById("zalo-link");
